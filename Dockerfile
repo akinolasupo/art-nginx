@@ -8,7 +8,6 @@ COPY functions.sh /
 COPY entrypoint-nginx.sh /
 COPY updateConf.sh /
 COPY artifactory-pro.conf /artifactory.conf
-COPY Dockerfile.nginx /docker/nginx-artifactory-pro/
 
 ENV NGINX_DATA /var/opt/jfrog/nginx
 
