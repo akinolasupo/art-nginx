@@ -15,7 +15,7 @@ ENV NGINX_DATA /var/opt/jfrog/nginx
 RUN mkdir -p /etc/pki/tls/private && mkdir -p /etc/pki/tls/certs && \
     openssl req -nodes -x509 -newkey rsa:4096 -keyout /etc/pki/tls/private/example.key \
         -out /etc/pki/tls/certs/example.pem -days 3650 \
-        -subj "/C=US/ST=California/L=SantaClara/O=IT/CN=*arts.k8s.opsmonks.com" && \
+        -subj "/C=US/ST=California/L=SantaClara/O=IT/CN=arts.k8s.opsmonks.com" && \
     chmod +x /entrypoint-nginx.sh /updateConf.sh
 
 # Prepare data directory and soflinks to it
