@@ -1,6 +1,6 @@
 FROM docker.bintray.io/jfrog/art-nginx:1.11.10
 
-MAINTAINER matank@jfrog.com
+MAINTAINER akinolasupo@gmail.com
 
 # Copy needed files
 COPY nginx.conf /etc/nginx/nginx.conf
