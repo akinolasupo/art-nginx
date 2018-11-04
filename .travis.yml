@@ -1,0 +1,5 @@
+sudo: required
+services:
+  - docker
+script:
+  - docker run -it ivy001/xenial echo "Hello World"
